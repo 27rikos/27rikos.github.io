@@ -7,7 +7,7 @@
 .simply-countdown > .simply-section {
   width: 50px;
   height: 50px;
-  padding: 60px;
+  padding: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 /* media query */
 
@@ -63,7 +63,7 @@
     font-size: 62.5%;
   }
   .simply-countdown > .simply-section {
-    padding: 50px;
+    padding: 40px;
     margin: 5px;
   }
   .mynav .nav-link {
@@ -81,7 +81,7 @@
     font-size: 55%;
   }
   .simply-countdown > .simply-section {
-    padding: 35px;
+    padding: 30px;
     margin: 3px;
   }
   .timeline li .timeline-image {
