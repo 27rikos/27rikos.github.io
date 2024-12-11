@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Eriko Solin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#my_skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">portofolio</a>
+            </li>
+            <li class="nav-item dropdown dropdown-center">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i id="theme-icon" class="ti ti-brightness-2"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a id="light-mode" class="dropdown-item" href="#"
+                    ><i class="ti ti-brightness-2 me-2"></i>Light</a
+                  >
+                </li>
+                <li>
+                  <a id="dark-mode" class="dropdown-item" href="#"
+                    ><i class="ti ti-moon me-1"></i>Dark</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="home">
+        <div class="container text-center">
+          <div class="row vh-100 align-items-center">
+            <div class="col-md-7">
+              <div class="d-flex flex-column align-items-start h-100">
+                <h1 class="fw-bold">Hi, I'm Eriko Solin</h1>
+                <h5>Full Stack Web Developer</h5>
+                <blockquote class="fst-italic">
+                  "Turning ideas into scalable, robust web solutions."
+                </blockquote>
+                <a href="#" class="btn btn-primary">Get Started</a>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img id="profile" src="img/profile.jpg" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="mb-5">
+        <div class="container">
+          <h1>About me</h1>
+          <div class="row fs-5">
+            <div class="col-md-8">
+              <p>
+                Hello, I'm Eriko Mitro Konco Solin, a passionate Web Developer.
+                I am a proud graduate of Universitas Methodist Indonesia, where
+                I honed my skills in creating dynamic and user-friendly
+                websites. With a deep understanding of modern web development
+                technologies, I specialize in building responsive and efficient
+                web applications that provide seamless user experiences. I am
+                always eager to explore new tools and trends in the field,
+                continuously improving my craft to deliver innovative solutions
+                for businesses and individuals alike. Let's create something
+                great together!
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p>Age <span class="text-info ms-2">22</span></p>
+              <p>Residence <span class="text-info ms-2">Indonesia</span></p>
+              <p>Address <span class="text-info ms-2">Medan</span></p>
+              <p>
+                Email <span class="text-info ms-2">rikosolin312@gmail.com</span>
+              </p>
+              <p>Phone <span class="text-info ms-2">0812-8768-2129</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="my_skills" class="my-skills-section py-5">
+        <div class="container">
+          <h1 class="text-center mb-5">My Skills</h1>
+          <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-4 col-6 text-center mb-4">
+              <div class="skill-item p-4 shadow-sm rounded h-100">
+                <i class="ti ti-brand-laravel display-2 text-danger mb-3"></i>
+                <h4>Laravel</h4>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 text-center mb-4">
+              <div class="skill-item p-4 shadow-sm rounded h-100">
+                <i class="ti ti-brand-php display-2 text-primary mb-3"></i>
+                <h4>PHP</h4>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 text-center mb-4">
+              <div class="skill-item p-4 shadow-sm rounded h-100">
+                <i
+                  class="ti ti-brand-bootstrap display-2 mb-3"
+                  style="color: #7f27ff"
+                ></i>
+                <h4>Bootstrap</h4>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 text-center mb-4">
+              <div class="skill-item p-4 shadow-sm rounded h-100">
+                <i
+                  class="ti ti-brand-javascript display-2 text-warning mb-3"
+                ></i>
+                <h4>JavaScript</h4>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 text-center mb-4">
+              <div class="skill-item p-4 shadow-sm rounded h-100">
+                <i
+                  id="github"
+                  class="ti ti-brand-github display-2 text-dark mb-3"
+                ></i>
+                <h4>GitHub</h4>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 text-center mb-4">
+              <div class="skill-item p-4 shadow-sm rounded h-100">
+                <i class="ti ti-brand-git display-2 text-danger mb-3"></i>
+                <h4>Git</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="py-5">
+        <div class="container">
+          <h1 class="text-center mb-5">My Portfolio</h1>
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img
+                  src="img/Macbook-Air-sikak-methodist.org (1).png"
+                  class="card-img-top"
+                  alt="Project 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SIKAK Website</h5>
+                  <p class="card-text">
+                    The SIKAK website is a platform for recording information
+                    about students and alumni. This website facilitates the
+                    campus in collecting and managing student and alumni data
+                    effectively.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a
+                      href="https://sikak-methodist.org/"
+                      class="btn btn-outline-primary"
+                      >View Website</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img
+                  src="img/Macbook-Air-hagamendhenanusantara.com.png"
+                  class="card-img-top"
+                  alt="Project 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Application</h5>
+                  <p class="card-text">
+                    The Haga Mendhena Nusantara blog application is a website
+                    designed to manage content, display information about the
+                    services provided, and showcase blog articles featuring
+                    updates from the company itself.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a
+                      href="https://hagamendhenanusantara.com/"
+                      class="btn btn-outline-primary"
+                      >View Website</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img
+                  src="img/Macbook-Air-gmimannahelvetia.org.png"
+                  class="card-img-top"
+                  alt="Project 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Church Website</h5>
+                  <p class="card-text">
+                    The church website is a website for managing congregation
+                    data, news, spiritual songs, church activity news,
+                    reflections and information about the church.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="https://gmimannahelvetia.org/"
+                        class="btn btn-outline-primary"
+                        >View Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

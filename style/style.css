@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Light Mode */
+.btn-primary {
+    background-color: #0081C9; /* A vibrant medium blue */
+    border-color: #0081C9;
+    color: white;
+}
+
+/* Dark Mode */
+[data-bs-theme="dark"] .btn-primary {
+    background-color: #5BC0F8; /* A lighter, brighter blue for dark mode */
+    border-color: #5BC0F8;
+    color: white;
+}
+
+/* Hover Effects */
+.btn-primary:hover {
+    background-color: #86E5FF; /* A very light blue for hover in light mode */
+    border-color: #86E5FF;
+    color: #333; /* Dark text for contrast on light background */
+}
+
+[data-bs-theme="dark"] .btn-primary:hover {
+    background-color: #FFC93C; /* A contrasting warm color for hover in dark mode */
+    border-color: #FFC93C;
+    color: #333; /* Dark text for contrast on light background */
+}
+#profile{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+
+}
+[data-bs-theme="dark"] #profile {
+    border: 2px solid white; /* Adding a white border */
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #5BC0F8,
+                0 0 0.8rem #5BC0F8,
+                0 0 2.8rem #5BC0F8,
+                inset 0 0 1.3rem #5BC0F8; 
+}
+.skill-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
