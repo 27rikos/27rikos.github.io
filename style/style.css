@@ -7,45 +7,47 @@
 }
 /* Light Mode */
 .btn-primary {
-    background-color: #0081C9; /* A vibrant medium blue */
-    border-color: #0081C9;
+    background-color: #5FA8D3; /* Soft blue */
+    border-color: #5FA8D3;
     color: white;
+}
+
+.btn-primary:hover {
+    background-color: #A8DADC; /* Light teal for hover in light mode */
+    border-color: #A8DADC;
+    color: #1D3557; /* Soft dark navy for contrast */
 }
 
 /* Dark Mode */
 [data-bs-theme="dark"] .btn-primary {
-    background-color: #5BC0F8; /* A lighter, brighter blue for dark mode */
-    border-color: #5BC0F8;
+    background-color: #457B9D; /* Muted soft blue for dark mode */
+    border-color: #457B9D;
     color: white;
 }
 
-/* Hover Effects */
-.btn-primary:hover {
-    background-color: #86E5FF; /* A very light blue for hover in light mode */
-    border-color: #86E5FF;
-    color: #333; /* Dark text for contrast on light background */
+[data-bs-theme="dark"] .btn-primary:hover {
+    background-color: #E63946; /* Warm coral red for hover in dark mode */
+    border-color: #E63946;
+    color: #F1FAEE; /* Light cream text for contrast */
 }
 
-[data-bs-theme="dark"] .btn-primary:hover {
-    background-color: #FFC93C; /* A contrasting warm color for hover in dark mode */
-    border-color: #FFC93C;
-    color: #333; /* Dark text for contrast on light background */
-}
-#profile{
+/* Profile Image */
+#profile {
     width: 80%;
     height: 80%;
     border-radius: 50%;
+}
 
-}
 [data-bs-theme="dark"] #profile {
-    border: 2px solid white; /* Adding a white border */
-    box-shadow: 0 0 .2rem #fff,
-                0 0 .2rem #fff,
-                0 0 2rem #5BC0F8,
-                0 0 0.8rem #5BC0F8,
-                0 0 2.8rem #5BC0F8,
-                inset 0 0 1.3rem #5BC0F8; 
+    border: 2px solid #F1FAEE; /* Soft white border for dark mode */
+    box-shadow: 0 0 0.3rem #F1FAEE,
+                0 0 0.4rem #F1FAEE,
+                0 0 1.5rem #457B9D,
+                0 0 1rem #457B9D,
+                0 0 3rem #457B9D,
+                inset 0 0 1.5rem #457B9D;
 }
+
 .skill-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -54,3 +56,7 @@
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
+  footer a:hover {
+    color: #0081C9; /* Warna biru lembut */
+    text-decoration: underline;
+}

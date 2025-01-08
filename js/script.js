@@ -3,7 +3,7 @@ const lightModeButton = document.getElementById("light-mode");
 const darkModeButton = document.getElementById("dark-mode");
 const htmlElement = document.documentElement;
 const themeIcon = document.getElementById("theme-icon");
-const githubIcon = document.getElementById("github")
+const githubIcon = document.getElementById("github");
 
 // Function to update theme and icon
 function updateTheme(mode) {
@@ -11,6 +11,8 @@ function updateTheme(mode) {
         htmlElement.setAttribute("data-bs-theme", "light");
         themeIcon.classList.remove("ti-moon");
         themeIcon.classList.add("ti-brightness-2");
+        githubIcon.classList.remove('text-light');
+        githubIcon.classList.add('text-dark');
     } else if (mode === "dark") {
         htmlElement.setAttribute("data-bs-theme", "dark");
         themeIcon.classList.remove("ti-brightness-2");
@@ -18,6 +20,8 @@ function updateTheme(mode) {
         githubIcon.classList.remove('text-dark');
         githubIcon.classList.add('text-light');
     }
+    // Save the selected theme to localStorage
+    localStorage.setItem("theme", mode);
 }
 
 // Event listener for Light mode
@@ -29,3 +33,13 @@ lightModeButton.addEventListener("click", function () {
 darkModeButton.addEventListener("click", function () {
     updateTheme("dark");
 });
+
+// Check if a theme is stored in localStorage
+const storedTheme = localStorage.getItem("theme");
+
+// Apply stored theme or default to light
+if (storedTheme) {
+    updateTheme(storedTheme);
+} else {
+    updateTheme("light"); // Default theme is light
+}
